@@ -142,12 +142,6 @@ RandomX_ConfigurationYada::RandomX_ConfigurationYada()
 	ArgonIterations = 4;
 }
 
-RandomX_ConfigurationScash::RandomX_ConfigurationScash()
-{
-	ArgonSalt = "RandomX-Scash\x01";
-	Tweak_V2_COMMITMENT = 1;
-}
-
 RandomX_ConfigurationScala::RandomX_ConfigurationScala()
 {
 	ArgonMemory       = 131072;
