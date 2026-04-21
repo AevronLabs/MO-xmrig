@@ -89,6 +89,8 @@ const char *Algorithm::kRX_GRAFT        = "rx/graft";
 const char *Algorithm::kRX_SFX          = "rx/sfx";
 const char *Algorithm::kRX_KEVA         = "rx/keva";
 const char *Algorithm::kRX_YADA         = "rx/yada";
+const char *Algorithm::kRX_MARS         = "rx/mars";
+const char *Algorithm::kRX_SCASH        = "rx/scash";
 #endif
 
 #ifdef XMRIG_ALGO_ARGON2
@@ -168,6 +170,8 @@ static const std::map<uint32_t, const char *> kAlgorithmNames = {
     ALGO_NAME(RX_SFX),
     ALGO_NAME(RX_KEVA),
     ALGO_NAME(RX_YADA),
+    ALGO_NAME(RX_MARS),
+    ALGO_NAME(RX_SCASH),
 #   endif
 
 #   ifdef XMRIG_ALGO_ARGON2
@@ -299,6 +303,10 @@ static const std::map<const char *, Algorithm::Id, aliasCompare> kAlgorithmAlias
                                     ALGO_ALIAS(RX_KEVA,         "randomkeva"),
     ALGO_ALIAS_AUTO(RX_YADA),       ALGO_ALIAS(RX_YADA,         "randomx/yada"),
                                     ALGO_ALIAS(RX_YADA,         "randomyada"),
+    ALGO_ALIAS_AUTO(RX_MARS),       ALGO_ALIAS(RX_MARS,         "randomx/mars"),
+                                    ALGO_ALIAS(RX_MARS,         "rx/marscoin")
+    ALGO_ALIAS_AUTO(RX_SCASH),      ALGO_ALIAS(RX_SCASH,        "randomx/scash"),
+                                    ALGO_ALIAS(RX_SCASH,        "randomscash"),
 #   endif
 
 #   ifdef XMRIG_ALGO_ARGON2
@@ -393,7 +401,7 @@ std::vector<xmrig::Algorithm> xmrig::Algorithm::all(const std::function<bool(con
         CN_PICO_0, CN_PICO_TLO,
         CN_UPX2,
         CN_GPU, RX_XLA, RX_XEQ, RX_KEVA,
-        RX_0, RX_V2, RX_WOW, RX_ARQ, RX_GRAFT, RX_SFX, RX_YADA,
+        RX_0, RX_V2, RX_WOW, RX_ARQ, RX_GRAFT, RX_SFX, RX_YADA, RX_SCASH, RX_MARS,
         AR2_CHUKWA, AR2_CHUKWA_V2, AR2_WRKZ,
         KAWPOW_RVN,
         GHOSTRIDER_RTM,

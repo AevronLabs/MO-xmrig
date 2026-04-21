@@ -142,6 +142,12 @@ RandomX_ConfigurationYada::RandomX_ConfigurationYada()
 	ArgonIterations = 4;
 }
 
+RandomX_ConfigurationScash::RandomX_ConfigurationScash()
+{
+	ArgonSalt = "RandomX-Scash\x01";
+	Tweak_V2_COMMITMENT = 1;
+}
+
 RandomX_ConfigurationScala::RandomX_ConfigurationScala()
 {
 	ArgonMemory       = 131072;
@@ -449,6 +455,7 @@ RandomX_ConfigurationSafex RandomX_SafexConfig;
 RandomX_ConfigurationKeva RandomX_KevaConfig;
 RandomX_ConfigurationScala RandomX_ScalaConfig;
 RandomX_ConfigurationYada RandomX_YadaConfig;
+RandomX_ConfigurationScash RandomX_ScashConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 

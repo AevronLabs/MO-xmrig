@@ -169,6 +169,15 @@ size_t xmrig::Job::nonceOffset() const
         return 147;
     }
 
+    if (algorithm() == Algorithm::RX_MARS) {
+        return 76;
+    }
+ 
+    // Scash uses Bitcoin-like block header, nonce at offset 76 (after version, prevHash, merkleRoot, ntime, nbits)
+    if (algorithm() == Algorithm::RX_SCASH) {
+        return 76;
+    }
+
     return 39;
 }
 
