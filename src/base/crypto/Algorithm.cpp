@@ -304,7 +304,7 @@ static const std::map<const char *, Algorithm::Id, aliasCompare> kAlgorithmAlias
     ALGO_ALIAS_AUTO(RX_YADA),       ALGO_ALIAS(RX_YADA,         "randomx/yada"),
                                     ALGO_ALIAS(RX_YADA,         "randomyada"),
     ALGO_ALIAS_AUTO(RX_MARS),       ALGO_ALIAS(RX_MARS,         "randomx/mars"),
-                                    ALGO_ALIAS(RX_MARS,         "rx/marscoin")
+                                    ALGO_ALIAS(RX_MARS,         "rx/marscoin"),
     ALGO_ALIAS_AUTO(RX_SCASH),      ALGO_ALIAS(RX_SCASH,        "randomx/scash"),
                                     ALGO_ALIAS(RX_SCASH,        "randomscash"),
 #   endif
